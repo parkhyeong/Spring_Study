@@ -11,9 +11,9 @@
 <%
 	int result =(int) request.getAttribute("result");
 	if(result==1){
-		out.print("<img src=yes.jpg>");
+		out.print("<img src=resources/img/ok.jpg>");
 	}else{
-		out.print("<img src=no.png>");
+		out.print("<img src=resources/img/no.png>");
 		
 	}
 %>
