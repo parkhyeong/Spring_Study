@@ -8,6 +8,15 @@
 </head>
 <body>
 <h3>상품등록 요청 되었음.</h3>
+<%
+	int result =(int) request.getAttribute("result");
+	if(result==1){
+		out.print("<img src=yes.jpg>");
+	}else{
+		out.print("<img src=no.png>");
+		
+	}
+%>
 <a href="product.jsp">등록화면으로!</a>
 </body>
 </html>
