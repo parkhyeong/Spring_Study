@@ -32,7 +32,7 @@
 <body>
 		<h3>상품등록수정화면입니다.</h3>
 		<hr color="red">
-		<form action="insert3">
+		<form action="update3">
 		<table border="1" align="center">
 			<tr>
 				<td>id: </td>
