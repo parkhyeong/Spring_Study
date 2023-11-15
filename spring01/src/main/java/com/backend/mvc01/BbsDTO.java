@@ -1,6 +1,6 @@
 package com.backend.mvc01;
 
-public class BbsDTO2 {
+public class BbsDTO {
 	private int id;
 	private String title;
 	private String content;

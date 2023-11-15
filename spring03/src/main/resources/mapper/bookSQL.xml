@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="book">
+<!-- object Relation Mapping ORM파일 -->
+	<insert id="create" parameterType="bookVO">
+		insert into book values (#{id},#{name},#{url},#{img})
+	</insert>
+
+	<update id="update" parameterType="bookVO">
+		update book set name=#{name} where id=#{id}		
+	</update>
+	
+	<delete id="delete" parameterType="String">
+		delete from book where id =#{id}
+	</delete>
+	
+	<!-- insert, delete, update는 resultType="int"라서 생략함.! -->
+	<!-- select는 어떤 dto에 넣는지를 모르기 때문에 resultType="bookVO"
+	를 지정해주어야 한다. 반드시! -->
+	<select id ="list" resultType="bookVO">
+		select * from book
+	</select>
+	
+	<select id ="one" parameterType="String" resultType="bookVO">
+		select * from book where id=#{id}
+	</select>
+
+	
+
+</mapper>
+
+
+

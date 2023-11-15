@@ -9,7 +9,7 @@
 	   bbs.jsp로 화면을 넘김 
 	4. 결과가 1이 아니면 alert("수정실패@@@")를 띄워주세요.  
  -->
- <jsp:useBean id="bag" class="com.backend.mvc01.BbsDTO2"></jsp:useBean>
+ <jsp:useBean id="bag" class="com.backend.mvc01.BbsDTO"></jsp:useBean>
  <jsp:setProperty property="*" name="bag"/>
  
  <%

@@ -6,10 +6,15 @@
 <!-- SQL문 정의할 때 VO표현을 간단하게 하고 싶은 경우. 
      별명을 지어서 사용 -->
    <typeAliases>
-      <typeAlias type="com.multi.mvc01.MemberDTO" alias="memberVO"></typeAlias>
+      <typeAlias type="com.backend.mvc01.MemberDTO" alias="memberVO"></typeAlias>
+      <typeAlias type="com.backend.mvc01.BbsDTO" alias="bbsVO"></typeAlias>
+      <typeAlias type="com.backend.mvc01.ProductDTO" alias="productVO"></typeAlias>
    </typeAliases>
+   
    <mappers>
    <!-- SQL문 정의하는 파일들의 목록을 지정. -->
-      <mapper resource="mapper/memberMapper.xml" />
+      <mapper resource="mapper/memberSQL.xml" />
+      <mapper resource="mapper/bbsSQL.xml" />
+      <mapper resource="mapper/productSQL.xml" />
    </mappers>
 </configuration>

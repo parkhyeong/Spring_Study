@@ -7,7 +7,7 @@
 	3. 성공하면 bbs.jsp로 넘어가자.
 	   bbs.jsp로 넘어가지 전에 alert()를 띄워주자.!
   -->
-<jsp:useBean id="bag" class="com.backend.mvc01.BbsDTO2"></jsp:useBean>
+<jsp:useBean id="bag" class="com.backend.mvc01.BbsDTO"></jsp:useBean>
 <jsp:setProperty property="id" name="bag" />
 
 <%
