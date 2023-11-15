@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="resources/js/jquery-3.7.1.js">
+<script type="text/javascript" src="resources/js/jquery-3.7.1.js"></script>
 <script type="text/javascript">
 	//jquery는 버튼하나당 함수 하나!
 	//특정한 이벤트가 발생하기를 기다렸다가
@@ -16,15 +16,16 @@
 	$(function() { 
 		$('#b1').click(function(){
 			$.ajax({
-				url:"",
+				url:"computer",
 				data:{
-					com: $('#com').value(),
-					price: $('#price').value(),
-					mouse: $('#mouse').value(),
-					price2: $('#price2').value()
+					com: $('#com').val(),
+					price: $('#price').val(),
+					mouse: $('#mouse').val(),
+					price2: $('#price2').val()
 				},
-				success:function(){
-					
+				success:function(x){
+					alert(x)
+					$("#result").html(x)
 				}//success
 			})//ajax
 		})

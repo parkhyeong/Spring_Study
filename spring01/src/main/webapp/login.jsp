@@ -12,8 +12,8 @@
         	bag.setPw(pw);
         	
         	MemberDAO dao = new MemberDAO();
-        	boolean result = dao.login(bag); //boolean(true/false)
-        	if(result){ //if(조건) {조건이 true이면 이 괄호를 실행해라!}
+        	int result = dao.login(bag); //boolean(true/false)
+        	if(result==1){ //if(조건) {조건이 true이면 이 괄호를 실행해라!}
         		//세션을 설정해주자.!!!
         		session.setAttribute("id", bag.getId());
         	}

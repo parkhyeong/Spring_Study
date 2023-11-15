@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="resources/js/jquery-3.7.1.js">
+<script type="text/javascript" src="resources/js/jquery-3.7.1.js"></script>
 <script type="text/javascript">
 	//jquery는 버튼하나당 함수 하나!
 	//특정한 이벤트가 발생하기를 기다렸다가
