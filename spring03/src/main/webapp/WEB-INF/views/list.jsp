@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="com.backend.mvc03.BookDTO"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -18,7 +19,7 @@
 <body>
 <!-- ctrl + shift + M 자동 임폴트 -->
 	<%
-		List<BookDTO> list = (List<BookDTO>) request.getAttribute("list");
+		ArrayList<BookDTO> list = (ArrayList<BookDTO>) request.getAttribute("list");
 	%>
 
 	<div class="container mt-4">

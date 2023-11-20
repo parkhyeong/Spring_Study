@@ -10,14 +10,14 @@
 </head>
 <body bgcolor="yellow">
 <%
-	//컨트롤러에서 모델로 지정한 것 request.getAttribute("모델이름");
+//컨트롤러에서 모델로 지정한 것 request.getAttribute("모델이름");
 	ArrayList<BbsDTO> list = (ArrayList<BbsDTO>)request.getAttribute("list"); 
 	//작 = (작)큰;
 	for(BbsDTO bag: list){
 %>
 		게시판 id <%= bag.getId() %> <br>
-		게시판 title <%= bag.getTitle() %> <br>
-		게시판 content <%= bag.getContent()%> <br>
+		<a href="one?id=<%= bag.getId() %>">게시판 title <%= bag.getTitle() %></a>
+		<br>
 		게시판 writer <%= bag.getWriter() %> <br>
 		<hr color="red">
 <% } %>

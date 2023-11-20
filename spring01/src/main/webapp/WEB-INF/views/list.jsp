@@ -2,6 +2,7 @@
 <%@page import="com.backend.mvc01.BbsDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,4 +23,11 @@
 		<hr color="red">
 <% } %>
 </body>
+<c:forEach items="${list}" var="bag" begin="2" end="10">
+	게시판 id ${bag.id} <br>
+	<a href="one?id=${bag.id}">게시판 title ${bag.title}</a>
+	<br>
+	게시판 writer ${bag.writer} <br>
+	<hr color="red">
+</c:forEach>
 </html>
