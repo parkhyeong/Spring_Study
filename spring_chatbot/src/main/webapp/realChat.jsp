@@ -28,6 +28,10 @@ var stompClient = null;
 		//3. 연결하면 됨.! + 데이터가 도착했을 때 자동으로 호출되는 함수를 하나 정의!
 		stompClient.connect({},function(frame){
 			console.log("연결됨."+frame)
+			//stompClient를 이용해서 특정한 채팅방에 가입을 해봅시다.
+			stompClient.subscribe("/topic/messages", function(messageOutput) {
+				console.log(JSON.parse(messageOutput.body))
+			})
 		})
 	}
 	function disconnect() {
@@ -37,7 +41,15 @@ var stompClient = null;
 		}
 	}
 	function sendMessage() {
-		
+		//누가
+		var from = document.getElementById("from").value
+		//입력한 내용
+		var text = document.getElementById("text").value
+		//stompClient.send()
+		stompClient.send("/app/chat",{},JSON.stringify({
+			"from":from,
+			"text":text
+		}))
 	}
 	
 </script>
