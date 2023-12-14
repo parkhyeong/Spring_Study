@@ -7,6 +7,7 @@ public class MemberVO {
 	private String tel;
 	private String email;
 	private String nickname;
+	
 	public String getMember_id() {
 		return member_id;
 	}

@@ -21,7 +21,16 @@
 		#{nickname}
 		)
 	</insert>
-		
+	
+	<!-- 아이디 중복 확인하기  -->
+	<select id="idOverlap" parameterType="memberVO" resultType="memberVO">
+		SELECT member_id FROM member WHERE member_id = #{member_id}
+	</select>
+	
+	<select id="nicknameOverlap" parameterType="memberVO" resultType="memberVO">
+		SELECT nickname FROM member WHERE nickname = #{nickname}
+	</select>
+
 </mapper>
 
 

@@ -17,6 +17,10 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <link rel="stylesheet" href="resources/css/style.css">
 
+<!-- 부트스트랩 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="home.jsp">전기자동차 타요타요</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"

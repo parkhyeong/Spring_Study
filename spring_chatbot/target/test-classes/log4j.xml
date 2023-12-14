@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.backend.chat">
+	<logger name="com.multi.chat">
 		<level value="info" />
 	</logger>
 	

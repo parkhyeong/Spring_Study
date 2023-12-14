@@ -3,8 +3,7 @@
 <%@ include file="header.jsp"%>
 <html>
 <head>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 <style>
 body {
 	background-color: #3498D8;

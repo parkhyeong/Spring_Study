@@ -25,4 +25,14 @@ public class MemberDAO {
 	public void insert(MemberVO memberVO) {
 		my.insert("member.insert", memberVO);
 	}
+	
+	public MemberVO idOverlap(String member_id) {
+		System.out.println(member_id);
+		return my.selectOne("member.idOverlap", member_id);
+	}
+	
+	public MemberVO nicknameOverlap(String nickname) {
+		System.out.println(nickname);
+		return my.selectOne("member.nicknameOverlap", nickname);
+	}
 }
