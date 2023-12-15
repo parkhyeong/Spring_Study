@@ -4,14 +4,20 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.backend.api.NaverVO" alias="naverVO"></typeAlias>
-		<typeAlias type="com.backend.api.MovieVO" alias="movieVO"></typeAlias>
-		<typeAlias type="com.backend.api.YoungVO" alias="youngVO"></typeAlias>
+		<typeAlias type="com.multi.api.NaverVO" alias="naverVO"></typeAlias>
+		<typeAlias type="com.multi.api.MovieVO" alias="movieVO"></typeAlias>
+		<typeAlias type="com.multi.api.Movie2VO" alias="movie2VO"></typeAlias>
+		<typeAlias type="com.multi.api.YoungVO" alias="youngVO"></typeAlias>
 	</typeAliases>
 
 	<mappers>
 		<mapper resource="mapper/naver.xml" />
 		<mapper resource="mapper/movie.xml" />
+		<mapper resource="mapper/movie2.xml" />
 		<mapper resource="mapper/young.xml" />
 	</mappers>
 </configuration>
+
+
+
+

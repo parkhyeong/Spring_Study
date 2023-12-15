@@ -10,7 +10,6 @@
 <body>
 <h3>번역할 데이터 입력</h3>
 <form action="trans">
-
   <div class="mb-3 mt-3">
     <label for="ko" class="form-label">번역할 한글 문장 입력</label>
     <input type="text" class="form-control" name="ko" value="내일은 금요일이야.!! 신난다.!">

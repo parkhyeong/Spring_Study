@@ -13,9 +13,10 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 <script type="text/javascript"
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+<!-- jquery -->
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<link rel="stylesheet" href="resources/css/style.css">
 
 <!-- 부트스트랩 CSS -->
 <link rel="stylesheet"
@@ -35,7 +36,7 @@
 			<li class="nav-item"><a class="nav-link" href="#">즐겨찾기</a></li>
 
 			<%
-				if (session.getAttribute("id") == null) {
+				if (session.getAttribute("member_id") == null) {
 			%>
 			<li class="nav-item"><a class="nav-link" href="login.jsp">로그인</a>
 			</li>

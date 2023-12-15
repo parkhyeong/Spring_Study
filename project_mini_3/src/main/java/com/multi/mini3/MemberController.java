@@ -26,11 +26,11 @@ public class MemberController {
 
 		if (result == 0) {
 
-			session.setAttribute("id", null);
+			session.setAttribute("member_id", null);
 
 			return "login_fail_alert";
 		} else {
-			session.setAttribute("id", memberVO.getMember_id());
+			session.setAttribute("member_id", memberVO.getMember_id());
 			return "redirect:home.jsp";
 		}
 
@@ -45,12 +45,10 @@ public class MemberController {
 
 	// 회원가입
 	@RequestMapping(value = "insert", method = RequestMethod.POST)
-	public String insert(MemberVO memberVO, HttpServletRequest request) {
+	public String insert(MemberVO memberVO) {
 
 		try {
 			memberservice.insert(memberVO);
-			request.setAttribute("msg", "없는 회원정보입니다 확인해주세요");
-			request.setAttribute("url", "/");
 			return "redirect:home.jsp";
 		} catch (Exception e) {
 			System.out.println("sql 실패");

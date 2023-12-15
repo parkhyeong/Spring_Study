@@ -5,12 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
 <script type="text/javascript">
-
 var xhr = new XMLHttpRequest();
 var url = 'http://apis.data.go.kr/1262000/SafetyNewsList/getCountrySafetyNewsList'; /*URL*/
-var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'7MFXQkDCH3OjrQSEjZi%2F2QB1%2Bf4Yrdt5kQ85ksLe1r5Mj%2FKT11vCI4W8mlGmXbiA%2BYR7pqtCJeGL0FE8FaYaoA%3D%3D'; /*Service Key*/
+var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'63Jk4KYSAeT0Kif97Z6jQm7H4vk6jMJSJ29jfJB4wMtKA%2FDfN7igbdpFRmXbS%2BfopaXmPMqvIhJWeVLeuy2DXw%3D%3D'; /*Service Key*/
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
 queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
 queryParams += '&' + encodeURIComponent('title1') + '=' + encodeURIComponent('입국'); /**/
@@ -26,6 +24,7 @@ xhr.onreadystatechange = function () {
 };
 
 xhr.send('');
+
 
 </script>
 </head>

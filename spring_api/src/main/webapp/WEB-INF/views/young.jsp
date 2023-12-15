@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>young테이블에 넣음</h1>
+young table에 넣음.
 </body>
 </html>

@@ -17,8 +17,8 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var naver_id_login = new naver_id_login("XUpijJmQsjUfBc_C_FJD",
-				"http://localhost:9999/api/callback.jsp");
+		var naver_id_login = new naver_id_login("VFdsT2SPGL6J7j2_rpyi",
+				"http://localhost:8888/api/callback.jsp");
 		alert(naver_id_login.oauthParams.access_token);
 		//naver_id_login.setPopup();
 		naver_id_login.get_naver_userprofile("naverSignInCallback()");
