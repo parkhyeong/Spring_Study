@@ -23,13 +23,21 @@
 	</insert>
 	
 	<!-- 아이디 중복 확인하기  -->
-	<select id="idOverlap" parameterType="memberVO" resultType="memberVO">
+	<select id="idConfirm" parameterType="memberVO" resultType="String">
 		SELECT member_id FROM member WHERE member_id = #{member_id}
 	</select>
 	
-	<select id="nicknameOverlap" parameterType="memberVO" resultType="memberVO">
+	<!-- 닉네임 중복 확인하기 -->
+	<select id="nicknameConfirm" parameterType="memberVO" resultType="String">
 		SELECT nickname FROM member WHERE nickname = #{nickname}
 	</select>
+	
+	<!-- 이메일 중복 확인하기 -->
+	<select id="email" parameterType="memberVO" resultType="String">
+		SELECT email FROM member WHERE email = #{email}
+	</select>
+	
+	
 
 </mapper>
 

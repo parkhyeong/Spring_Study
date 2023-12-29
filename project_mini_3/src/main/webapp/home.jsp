@@ -15,9 +15,7 @@
 	background-color: #3498db; /* 파란색 */
 }
 </style>
-<%
-	String id = (String) session.getAttribute("id");
-%>
+
 </head>
 <body>
 

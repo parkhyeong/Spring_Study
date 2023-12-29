@@ -58,17 +58,16 @@ public class MemberController {
 	}
 
 	// 아이디 중복확인 처리
-	@RequestMapping(value = "idOverlap", method = RequestMethod.POST)
-	public void idOverlap(HttpServletResponse response, String member_id) throws IOException {
+	@RequestMapping(value = "idConfirm", method = RequestMethod.POST)
+	public void idConfirm(HttpServletResponse response, String member_id) throws IOException {
 		// @RequestParam는 요청의 특정 파라미터 값을 찾아낼 때 사용하는 어노테이션
-		memberservice.idOverlap(member_id, response); // 서비스에 있는 idOverlap 호출.
+		memberservice.idConfirm(member_id, response); // 서비스에 있는 idOverlap 호출.
 	}
 
 	//닉네임 중복확인 처리
-	@RequestMapping(value = "nicknameOverlap", method = RequestMethod.POST)
-	public void nicknameOverlap(HttpServletResponse response, String nickname) throws IOException {
-		// @RequestParam는 요청의 특정 파라미터 값을 찾아낼 때 사용하는 어노테이션
-		memberservice.nicknameOverlap(nickname, response); // 서비스에 있는 idOverlap 호출.
+	@RequestMapping(value = "nicknameConfirm", method = RequestMethod.POST)
+	public void nicknameConfirm(HttpServletResponse response, String nickname) throws IOException {
+		memberservice.nicknameConfirm(nickname, response); 
 	}
 
 }

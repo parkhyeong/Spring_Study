@@ -12,7 +12,6 @@ public class MemberDAO {
 	
 	public MemberVO select(MemberVO memberVO) {
 		MemberVO result=my.selectOne("member.select", memberVO);
-		System.out.println(result);
 		return result;
 	}
 	
@@ -26,13 +25,11 @@ public class MemberDAO {
 		my.insert("member.insert", memberVO);
 	}
 	
-	public MemberVO idOverlap(String member_id) {
-		System.out.println(member_id);
-		return my.selectOne("member.idOverlap", member_id);
+	public String idConfirm(String member_id) {
+		return my.selectOne("member.idConfirm", member_id);
 	}
 	
-	public MemberVO nicknameOverlap(String nickname) {
-		System.out.println(nickname);
-		return my.selectOne("member.nicknameOverlap", nickname);
+	public String nicknameConfirm(String nickname) {
+		return my.selectOne("member.nicknameConfirm", nickname);
 	}
 }
